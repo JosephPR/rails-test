@@ -1,6 +1,6 @@
 <h1>Lists</h1>
 
-<table>
+<table class="table">
   <tr>
     <th>Title</th>
     <th>Due</th>
@@ -10,8 +10,8 @@
 
 <% @lists.each do |list| %>
   <tr>
-    <td><%= list.title %> - </td>
-    <td>- <%= list.due %></td>
+    <td><%= list.title %></td>
+    <td><%= list.due %></td>
     <td><%= link_to 'Show', list %></td>
     <td><%= link_to 'Edit', edit_list_path(list) %></td>
     <td><%= link_to 'Destroy', list, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -21,4 +21,4 @@
 
 <br />
 
-<%= link_to 'New List', new_list_path %>
+<%= link_to 'New List', new_list_path, :class => 'btn btn-warning'%>
