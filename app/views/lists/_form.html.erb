@@ -12,9 +12,16 @@
 
   <div class="field">
     <%= f.label :title %><br />
-    <%= f.text_field :title %>
+    <%= f.text_field :title %><br />
+    <%= f.label :due %><br />
+    <%= f.text_field :due, :class => "datepicker" %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
+  <script>
+    $( document ).ready(function() {
+      $('.datepicker').datepicker({format: 'dd/mm/yyyy'});
+    });
+  </script>
 <% end %>

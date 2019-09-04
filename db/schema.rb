@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(:version => 20140318155532) do
 
   create_table "lists", :force => true do |t|
     t.string   "title"
+    t.string   "due"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
   end

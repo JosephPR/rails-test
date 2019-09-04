@@ -1,7 +1,9 @@
 class ListsController < ApplicationController
+  respond_to :html, :json
   # GET /lists
   def index
-    @lists = List.all
+    @lists = List.order(:due)
+    respond_with(@lists)
   end
 
   # GET /lists/1
