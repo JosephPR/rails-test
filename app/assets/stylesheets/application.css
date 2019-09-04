@@ -17,3 +17,8 @@
 .btn {
   margin: 10px;
 }
+
+.form-control {
+  width: 20%;
+  cursor: pointer;
+}
