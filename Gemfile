@@ -3,6 +3,8 @@ source 'https://rubygems.org'
 gem 'rails', '3.2.17'
 gem 'sqlite3'
 gem 'jquery-rails'
+gem 'bootstrap-datepicker-rails'
+gem 'bootstrap'
 
 group :test, :development do
   gem 'rspec-rails'
