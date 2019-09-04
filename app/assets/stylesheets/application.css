@@ -11,10 +11,9 @@
  *= require bootstrap.min
  *= require bootstrap-theme.min
  *= require_self
-  *= require bootstrap-datepicker
+ *= require bootstrap-datepicker
  */
-<<<<<<< HEAD:app/assets/stylesheets/application.scss
-s
-=======
-@import 'bootstrap'
->>>>>>> a5315e4a82ad05e608e1cb774e301a7edbcddde1:app/assets/stylesheets/application.scss
+
+.btn {
+  margin: 10px;
+}
